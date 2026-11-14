@@ -271,3 +271,63 @@ Evaluate this workflow against:
 This workflow defines review expectations. It does not establish that the runtime currently enforces reviewer independence, finding resolution, evidence collection, or approval requirements.
 
 These capabilities require separate implementation and evaluation.
+
+## 13. Review Outcome and Task Lifecycle Mapping
+
+Review outcomes MUST map to the canonical task lifecycle as follows:
+
+| Review Outcome | Required Task Lifecycle Status |
+|---|---|
+| `PASS` | `COMPLETED`, provided all task completion criteria are satisfied. |
+| `PASS_WITH_NOTES` | `COMPLETED`, provided all acceptance criteria are satisfied and remaining findings are non-blocking. |
+| `CHANGES_REQUIRED` | `REWORK_REQUIRED`. |
+| `BLOCKED` | `BLOCKED`. |
+
+The reviewer MUST communicate the outcome and supporting evidence to the accountable task owner.
+
+The task owner remains responsible for ensuring the corresponding lifecycle transition is recorded.
+
+A successful review does not independently authorize task completion. All required deliverables, verification evidence, reporting, and other completion conditions MUST also be satisfied.
+
+If review is not required for a particular task, the applicable task completion and verification requirements still apply.
+
+## 14. Finding Resolution and Risk Acceptance
+
+The reviewer identifies and classifies findings but MUST NOT independently waive mandatory acceptance criteria, governance requirements, or execution restrictions.
+
+Finding resolution MUST follow these rules:
+
+- `OPEN`: Finding has been identified and remains unresolved.
+- `IN_PROGRESS`: Corrective work is underway.
+- `RESOLVED`: Corrective work has been verified against the original finding.
+- `ACCEPTED_RISK`: An authorized party has explicitly accepted the documented risk.
+- `WONT_FIX`: An authorized party has approved not implementing the proposed correction, where such a decision is permitted.
+
+Risk acceptance MUST include:
+
+- Finding reference.
+- Description of the accepted risk.
+- Rationale.
+- Potential impact.
+- Authorizing party.
+- Approval record.
+- Applicable conditions or limitations.
+
+A finding affecting mandatory acceptance criteria or a non-waivable governance requirement MUST NOT be closed through `ACCEPTED_RISK` or `WONT_FIX`.
+
+## 15. Review Independence and Final Acceptance
+
+The implementation owner MUST NOT claim independent verification of their own implementation.
+
+When an independent reviewer is required but unavailable, the limitation MUST be disclosed and escalated according to applicable governance requirements.
+
+The accountable task owner MUST confirm that:
+
+1. The review outcome is recorded.
+2. Blocking findings are resolved or handled through an explicitly authorized process.
+3. Required acceptance criteria are satisfied.
+4. Required verification evidence is available.
+5. Remaining limitations and accepted risks are disclosed.
+6. All other task completion requirements are satisfied.
+
+Only then may the task transition to `COMPLETED` under `operations/workflows/TASK_LIFECYCLE.md`.
