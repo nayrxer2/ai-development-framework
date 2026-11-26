@@ -168,7 +168,7 @@ Where possible, permissions must be enforced through:
 
 Prompt instructions alone are not security boundaries.
 
-If a runtime cannot enforce a required boundary, the agency must disclose that limitation and use an appropriate alternative control or decline the action.
+If a runtime cannot enforce a required boundary, the agency must disclose that limitation and use an appropriate alternative control or decline the action. Human mediation is an acceptable alternative only when an authorized human directly controls the relevant action or access boundary. Human oversight, approval, or supervision alone does not constitute technical enforcement, and prompt instructions alone are insufficient. If the required boundary cannot be enforced or directly controlled, the affected action MUST remain blocked or be declined.
 
 ## 9. Project Engagement Boundaries
 
