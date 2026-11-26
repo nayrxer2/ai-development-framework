@@ -445,7 +445,7 @@ The implementing agent must provide:
 - Risks and blockers.
 - Recommended next action.
 
-Use `operations/workflows/HANDOFF_CONTRACT.md` as the canonical handoff specification.
+Use `operations/handoffs/HANDOFF_CONTRACT.md` as the canonical handoff specification.
 
 ### Integration Procedure
 
@@ -783,7 +783,7 @@ Can the agency distinguish implemented, verified, and accepted work in its deliv
 - `engagements/PROJECT_ENGAGEMENT_MODEL.md`
 - `operations/workflows/PROJECT_ONBOARDING_WORKFLOW.md`
 - `operations/workflows/TASK_LIFECYCLE.md`
-- `operations/workflows/HANDOFF_CONTRACT.md`
+- `operations/handoffs/HANDOFF_CONTRACT.md`
 - `organization/AGENT_CATALOG.md`
 - `organization/RESPONSIBILITY_MATRIX.md`
 - `skills/SKILL_ARCHITECTURE.md`

@@ -670,7 +670,7 @@ When testing or inspection cannot be performed, does the orchestrator explicitly
 - `governance/EXECUTION_AUTHORITY_MODEL.md`
 - `governance/CHANGE_CONTROL.md`
 - `operations/workflows/TASK_LIFECYCLE.md`
-- `operations/workflows/HANDOFF_CONTRACT.md`
+- `operations/handoffs/HANDOFF_CONTRACT.md`
 - `templates/TASK.template.md`
 - `templates/HANDOFF.template.md`
 - `templates/DECISION_RECORD.template.md`
