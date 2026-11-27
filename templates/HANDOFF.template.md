@@ -1,29 +1,52 @@
 # Handoff: [task or work item]
 
+- **Handoff ID:** [stable identifier]
+- **Parent task ID:** [task identifier]
+- **Delegated task ID:** [task identifier or not applicable]
+- **Engagement ID:** [engagement identifier]
 - **From:** [owner]
 - **To:** [receiving owner]
-- **Status:** complete | blocked | needs follow-up
+- **Date/time:** [timestamp]
+- **Handoff acceptance outcome:** ACCEPTED | ACCEPTED_WITH_CONDITIONS | NEEDS_CLARIFICATION | REJECTED
+- **Task status:** [canonical status from TASK_LIFECYCLE.md]
 
-## Objective and scope
+## Objective, scope, and acceptance criteria
 
-Summarize the intended outcome and boundaries.
+- Objective:
+- Included work:
+- Exclusions:
+- Acceptance criteria:
+- Applicable authorization level:
 
-## Work completed
+## Context and dependencies
 
-- [Completed item]
+- Relevant requirements, files, decisions, constraints, or assumptions:
+- Prerequisites and related tasks:
+- Required decisions or approvals:
+- Unresolved blockers:
 
-## Changes and decisions
+## Deliverables and current status
 
-- [Files or artifacts changed; important decisions]
+- Expected deliverables:
+- Work completed:
+- Work in progress:
+- Work not started:
+- Changed files or artifacts:
+- Decisions and rationale:
 
-## Validation
+## Authority and approval
 
-- [Checks performed and exact outcomes]
+- Permitted actions:
+- Restricted actions:
+- Required approvals and references:
 
-## Open issues and risks
+## Validation and evidence
 
-- [Remaining issue, risk, or none]
+- Required checks and evidence:
+- Checks performed and outcomes:
+- Known validation limitations:
 
-## Next action
+## Open issues, risks, and next action
 
-- [Action and owner]
+- Outstanding issues or risks:
+- Recommended next action and owner:
